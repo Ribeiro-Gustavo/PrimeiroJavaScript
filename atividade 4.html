@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo JS</title>
+    <script>
+        function verificarVariavel() {
+            var variavel = prompt("Digite a variável:");
+
+            if (variavel === "a") {
+                console.log("A");
+                alert("A");
+            } else if (variavel === "b") {
+                console.log("B");
+                alert("B");
+            } else {
+                console.log("Outra letra");
+                alert("Outra letra");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="verificarVariavel()">Verificar variável</button>
+</body>
+
+</html>

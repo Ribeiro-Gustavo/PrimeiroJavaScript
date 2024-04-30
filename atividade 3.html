@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo JS</title>
+    <script>
+        const vetor = [10, 20, 30, 40, 50];
+
+        function calcularMedia(vetor) {
+            let soma = 0;
+
+            for (let i = 0; i < vetor.length; i++) {
+                soma += vetor[i];
+            }
+
+            // Calculando a média
+            const media = soma / vetor.length;
+            return media;
+        }
+
+        const media = calcularMedia(vetor);
+
+        console.log("A média dos números do vetor é:", media);
+        alert(media);
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

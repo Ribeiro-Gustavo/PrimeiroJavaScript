@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo JS</title>
+    <script>
+        function verificarNota() {
+            var numero1 = prompt("Digite o primeiro número:");
+
+            numero1 = parseFloat(numero1);
+
+            if (isNaN(numero1)) {
+                alert("Por favor, digite números válidos.");
+                return;
+            }
+
+            if (numero1 < 6) {
+                alert("REPROVADO");
+            } else if (numero1 >= 6 && numero1 < 8) {
+                alert("APROVADO");
+            } else if (numero1 >= 8) {
+                alert("APROVADO COM LOUVOR");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="verificarNota()">Verificar Nota</button>
+</body>
+
+</html>
